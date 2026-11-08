@@ -52,8 +52,7 @@
             overflow-x: hidden;
         }
 
-        /* SIDEBAR */
-
+       
         .admin-sidebar {
             position: fixed;
             inset: 0 auto 0 0;
@@ -113,7 +112,6 @@
             white-space: nowrap;
         }
 
-        /* BRAND NAME ALL WHITE */
         .brand-name span {
             color: #FFFFFF;
         }
@@ -210,9 +208,6 @@
             background: rgba(220, 70, 70, 0.12);
             color: #FF8585;
         }
-
-        /* MAIN CONTENT */
-
         .admin-main {
             margin-left: var(--sidebar-width);
             min-width: 0;
@@ -274,8 +269,6 @@
             padding: 27px 30px;
         }
 
-        /* MOBILE NAVIGATION */
-
         .mobile-menu-button {
             display: none;
 
@@ -305,8 +298,6 @@
             display: none;
         }
 
-        /* TABLET */
-
         @media (max-width: 1100px) {
             .admin-content {
                 padding: 24px 20px;
@@ -316,9 +307,6 @@
                 padding: 14px 20px;
             }
         }
-
-        /* MOBILE AND SMALL TABLET */
-
         @media (max-width: 900px) {
             .admin-sidebar {
                 transform: translateX(-100%);
@@ -354,8 +342,6 @@
                 padding: 12px 16px;
             }
         }
-
-        /* PHONE */
 
         @media (max-width: 600px) {
             .admin-topbar {
