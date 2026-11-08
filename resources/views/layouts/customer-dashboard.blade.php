@@ -54,7 +54,6 @@
             min-height: 100vh;
         }
 
-        /* SIDEBAR */
 
         .customer-sidebar {
             width: var(--sidebar-width);
@@ -242,15 +241,11 @@
             color: var(--text-muted);
         }
 
-        /* CONTENT */
-
         .customer-content {
             width: 100%;
             min-width: 0;
             padding: 27px 30px;
         }
-
-        /* MOBILE MENU */
 
         .customer-menu-toggle {
             display: none;
@@ -273,7 +268,6 @@
             display: none;
         }
 
-        /* RESPONSIVE */
 
         @media (max-width: 900px) {
 
@@ -354,8 +348,6 @@
 <body>
 
 <div class="customer-wrapper">
-
-    <!-- SIDEBAR -->
     <aside class="customer-sidebar" id="customerSidebar">
 
         <div class="customer-brand">
@@ -410,13 +402,9 @@
 
     </aside>
 
-    <!-- MOBILE OVERLAY -->
     <div class="customer-overlay" id="customerOverlay"></div>
-
-    <!-- MAIN CONTENT -->
     <main class="customer-main">
 
-        <!-- TOPBAR -->
         <header class="customer-topbar">
 
             <div class="customer-topbar-left">
@@ -436,8 +424,6 @@
                 </h1>
 
             </div>
-
-            <!-- CUSTOMER NAME -->
             <div class="customer-user">
 
                 <div class="customer-user-icon">
@@ -452,8 +438,6 @@
             </div>
 
         </header>
-
-        <!-- PAGE CONTENT -->
         <section class="customer-content">
             @yield('content')
         </section>
@@ -462,10 +446,8 @@
 
 </div>
 
-<!-- JQUERY -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-<!-- SIDEBAR SCRIPT -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -496,15 +478,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    // CLOSE WHEN CLICKING OVERLAY
     overlay?.addEventListener('click', closeSidebar);
-
-    // CLOSE WHEN CLICKING NAVIGATION
     sidebar?.querySelectorAll('.customer-nav a').forEach(function (link) {
         link.addEventListener('click', closeSidebar);
     });
 
-    // CLOSE USING ESCAPE KEY
     document.addEventListener('keydown', function (event) {
 
         if (event.key === 'Escape') {
@@ -512,8 +490,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
     });
-
-    // RESET SIDEBAR WHEN RETURNING TO DESKTOP
     window.addEventListener('resize', function () {
 
         if (window.innerWidth > 900) {
@@ -524,8 +500,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 </script>
-
-<!-- PAGE SCRIPTS -->
 @stack('scripts')
 
 </body>
