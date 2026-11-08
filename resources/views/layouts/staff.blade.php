@@ -69,7 +69,6 @@
             font-family: inherit;
         }
 
-        /* SIDEBAR */
 
         .staff-sidebar {
             width: var(--sidebar-width);
@@ -260,7 +259,7 @@
             color: #FF7777;
         }
 
-        /* MAIN CONTENT */
+
 
         .staff-main {
             width: calc(100% - var(--sidebar-width));
@@ -372,8 +371,6 @@
             background: var(--emerald-dark);
         }
 
-        /* FORM ELEMENTS */
-
         .staff-content input,
         .staff-content select,
         .staff-content textarea {
@@ -401,7 +398,6 @@
             color: var(--text);
         }
 
-        /* TABLES */
 
         .staff-content .table-responsive {
             width: 100%;
@@ -438,8 +434,6 @@
             background: #FAFBF9;
         }
 
-        /* MOBILE NAVIGATION */
-
         .staff-menu-toggle {
             display: none;
 
@@ -468,8 +462,6 @@
             display: none;
         }
 
-        /* TABLET */
-
         @media (max-width: 1100px) {
             .staff-content {
                 padding: 24px 20px;
@@ -480,7 +472,6 @@
             }
         }
 
-        /* PHONE AND SMALL TABLET */
 
         @media (max-width: 900px) {
             .staff-sidebar {
@@ -513,8 +504,6 @@
                 padding: 20px 16px;
             }
         }
-
-        /* PHONE */
 
         @media (max-width: 600px) {
             .staff-topbar {
