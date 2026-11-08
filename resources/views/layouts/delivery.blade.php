@@ -49,8 +49,6 @@
             overflow-x: hidden;
         }
 
-        /* SIDEBAR */
-
         .delivery-sidebar {
             position: fixed;
             inset: 0 auto 0 0;
@@ -189,8 +187,6 @@
             color: #FF8585;
         }
 
-        /* MAIN CONTENT */
-
         .delivery-main {
             margin-left: var(--sidebar-width);
             min-width: 0;
@@ -233,7 +229,6 @@
             padding: 27px 30px;
         }
 
-        /* PROFILE */
 
         .topbar-profile {
             position: relative;
@@ -386,8 +381,6 @@
             background: #FFF1F1;
         }
 
-        /* MOBILE MENU */
-
         .mobile-menu-button {
             display: none;
             width: 38px;
@@ -412,7 +405,6 @@
             display: none;
         }
 
-        /* TABLET AND MOBILE */
 
         @media (max-width: 900px) {
             .delivery-sidebar {
@@ -662,7 +654,6 @@
     <script>
         $(function () {
 
-            // MOBILE SIDEBAR
             const sidebar = $('#deliverySidebar');
             const overlay = $('#sidebarOverlay');
             const menuButton = $('#mobileMenuButton');
@@ -690,7 +681,6 @@
                 }
             });
 
-            // PROFILE DROPDOWN
             const profileToggle = $('#profileToggle');
             const profileDropdown = $('#profileDropdown');
 
