@@ -7,52 +7,165 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Lavanderie – Laundry Appointment Management System
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+A web-based laundry appointment and management system designed to make laundry services more convenient for customers and easier to manage for administrators, staff, and delivery personnel.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## About the Project
 
-## Learning Laravel
+Lavanderie is a Laravel-based Laundry Appointment Management System that allows customers to book laundry services online while providing an organized platform for managing appointments, laundry operations, payments, inventory, and deliveries.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The system supports both online bookings and walk-in transactions, helping streamline daily laundry shop operations.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Features
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### Customer
+- Online laundry appointment booking
+- View and manage bookings
+- Track laundry order status
+- View booking details
+- Select available laundry services
+- Pickup and delivery options
 
-## Agentic Development
+### Administrator
+- Admin dashboard
+- Manage customer orders and bookings
+- Manage customers and staff
+- Manage laundry services
+- Monitor payments
+- Inventory management
+- Reports and expense management
+- Manage walk-in transactions
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### Staff
+- Staff dashboard
+- View and manage assigned orders
+- Process laundry orders
+- Update laundry processing statuses
+- Manage walk-in transactions
+- Assign delivery personnel
+- Manage inventory
+
+### Delivery Personnel
+- Delivery dashboard
+- View assigned deliveries
+- Track delivery information
+- Update delivery statuses
+- View delivery history
+- Manage delivery profile
+
+## Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| PHP | Backend Programming |
+| Laravel | Web Application Framework |
+| Blade | Frontend Templating |
+| Tailwind CSS | UI Styling |
+| JavaScript | Frontend Interactions |
+| Vite | Asset Bundling |
+| Database | MYSQL |
+| PayPal Sandbox | Test Payment Integration |
+
+## System Workflow
+
+1. Customers create an account and book a laundry appointment.
+2. Administrators review online bookings and assign staff.
+3. Staff process laundry orders and update their statuses.
+4. Staff assign delivery personnel when delivery is required.
+5. Delivery personnel handle assigned deliveries and update delivery statuses.
+6. Administrators monitor orders, payments, inventory, and business records.
+
+Walk-in transactions can also be recorded directly by staff and reflected in the management system.
+
+## Installation and Setup
+
+### Prerequisites
+
+- PHP 8.3 or higher
+- Composer
+- Node.js and npm
+- Compatible database
+- Git
+
+### 1. Clone the Repository
 
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/Syntaxdevv/Laundry-Appointment-Management-System.git
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### 2. Navigate to the Project Directory
 
-## Contributing
+```bash
+cd Laundry-Appointment-Management-System
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 3. Install PHP Dependencies
 
-## Code of Conduct
+```bash
+composer install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 4. Install Frontend Dependencies
 
-## Security Vulnerabilities
+```bash
+npm install
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 5. Configure Environment Variables
 
-## License
+```bash
+copy .env.example .env
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Configure your database credentials and other required environment variables inside the `.env` file.
+
+### 6. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+### 7. Run Database Migrations and Seeders
+
+```bash
+php artisan migrate --seed
+```
+
+### 8. Build Frontend Assets
+
+```bash
+npm run build
+```
+
+### 9. Start the Development Server
+
+```bash
+php artisan serve
+```
+
+Open your browser and visit:
+
+http://127.0.0.1:8000
+
+## Payment Integration
+
+Lavanderie includes PayPal Sandbox integration for testing payment transactions.
+
+**Note:** The payment integration is configured for sandbox testing and does not process real payments.
+
+## Project Limitations
+
+- Payment transactions use the PayPal Sandbox environment.
+- SMS notifications are not currently implemented.
+- Laundry processing statuses are manually updated by staff.
+- An internet connection is required to access the application.
+- The system is designed for a single laundry shop branch.
+
+---
+
+
+## MTI
+
+This project and its original source code are protected by applicable copyright laws. Unauthorized copying, reproduction, modification, distribution, or use of this project without permission from the rightful owner is prohibited.
