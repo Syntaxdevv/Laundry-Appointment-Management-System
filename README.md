@@ -166,6 +166,6 @@ Lavanderie includes PayPal Sandbox integration for testing payment transactions.
 ---
 
 
-## MTI
+## 📄 License
 
 This project and its original source code are protected by applicable copyright laws. Unauthorized copying, reproduction, modification, distribution, or use of this project without permission from the rightful owner is prohibited.
