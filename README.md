@@ -65,7 +65,7 @@ The system supports both online bookings and walk-in transactions, helping strea
 | Tailwind CSS | UI Styling |
 | JavaScript | Frontend Interactions |
 | Vite | Asset Bundling |
-| Database | MYSQL |
+| MYSQL | Database Management and Data Storage |
 | PayPal Sandbox | Test Payment Integration |
 
 ## System Workflow
